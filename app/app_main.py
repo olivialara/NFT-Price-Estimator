@@ -13,6 +13,9 @@ menu = st.sidebar.selectbox(
     ("Search by Punk ID", "Highest Estimated Value Punks", "Highest Rarity Scores", "Averages of Types & Accessories")
 )
 
+st.sidebar.markdown('---')
+st.sidebar.write('Olivia Lara | December 2021 oliviamarielara@gmail.com https://github.com/olivialara')
+
 if menu == 'Search by Punk ID':
     set_home()
 elif menu == 'Highest Estimated Value Punks':
