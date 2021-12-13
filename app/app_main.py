@@ -18,13 +18,13 @@ with st.sidebar:
     st.sidebar.markdown('---')
     st.sidebar.write('Olivia Lara | December 2021 oliviamarielara@gmail.com https://github.com/olivialara')
 
-    if menu == 'Search by Punk ID':
-        set_home()
-    elif menu == 'Highest Estimated Value Punks':
-        set_value()
-    elif menu == 'Highest Rarity Scores':
-        set_rarity()
-    elif menu == 'Averages of Types & Accessories':
-        set_averages()
-    elif menu == 'Project Terms & Info':
-        set_about()
+if menu == 'Search by Punk ID':
+    set_home()
+elif menu == 'Highest Estimated Value Punks':
+    set_value()
+elif menu == 'Highest Rarity Scores':
+    set_rarity()
+elif menu == 'Averages of Types & Accessories':
+    set_averages()
+elif menu == 'Project Terms & Info':
+    set_about()
