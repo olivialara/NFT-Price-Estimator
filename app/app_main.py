@@ -5,22 +5,26 @@ from PIL import Image
 from app_functions import *
 
 image = Image.open('images/cryptopunks-image.jpg')
-st.sidebar.image(image)
-st.sidebar.header('What do you want?')
 
-menu = st.sidebar.selectbox(
-    "Select one below.",
-    ("Search by Punk ID", "Highest Estimated Value Punks", "Highest Rarity Scores", "Averages of Types & Accessories")
-)
+with st.sidebar: 
+    st.sidebar.image(image)
+    st.sidebar.header('What do you want?')
 
-st.sidebar.markdown('---')
-st.sidebar.write('Olivia Lara | December 2021 oliviamarielara@gmail.com https://github.com/olivialara')
+    menu = st.sidebar.selectbox(
+        "Select one below.",
+        ("Search by Punk ID", "Highest Estimated Value Punks", "Highest Rarity Scores", "Averages of Types & Accessories", "Project Terms & Info")
+    )
 
-if menu == 'Search by Punk ID':
-    set_home()
-elif menu == 'Highest Estimated Value Punks':
-    set_value()
-elif menu == 'Highest Rarity Scores':
-    set_rarity()
-elif menu == 'Averages of Types & Accessories':
-    set_averages()
+    st.sidebar.markdown('---')
+    st.sidebar.write('Olivia Lara | December 2021 oliviamarielara@gmail.com https://github.com/olivialara')
+
+    if menu == 'Search by Punk ID':
+        set_home()
+    elif menu == 'Highest Estimated Value Punks':
+        set_value()
+    elif menu == 'Highest Rarity Scores':
+        set_rarity()
+    elif menu == 'Averages of Types & Accessories':
+        set_averages()
+    elif menu == 'Project Terms & Info':
+        set_about()
