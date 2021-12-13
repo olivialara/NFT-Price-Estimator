@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import nltk
+#import nltk
 from app_functions import *
 
 st.sidebar.image('cryptopunks-image.jpg')
