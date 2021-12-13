@@ -15,10 +15,10 @@ def set_home():
     # st.header("Search By Punk ID")
     st.subheader("Get the estimated value, rarity score, similar punks, and transaction data.")
 
-    trans = pd.read_csv('../data/clean_transactions.csv')
-    rarity = pd.read_csv('../data/clean_rarity.csv')
-    nearest_neighbors = pd.read_csv('../data/clean_nearest_neighbors.csv')
-    estimates = pd.read_csv('../data/nn_preds.csv')
+    trans = pd.read_csv('data/clean_transactions.csv')
+    rarity = pd.read_csv('data/clean_rarity.csv')
+    nearest_neighbors = pd.read_csv('data/clean_nearest_neighbors.csv')
+    estimates = pd.read_csv('data/nn_preds.csv')
 
     id = st.number_input('CryptoPunk ID', 0, 9999)
     col1, col2, col3 = st.columns(3)
