@@ -1,10 +1,10 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-#import nltk
 from app_functions import *
 
-st.sidebar.image('images/cryptopunks-image.jpg')
+image = Image.open('images/cryptopunks-image.jpg')
+st.sidebar.image(image)
 st.sidebar.header('What do you want?')
 
 menu = st.sidebar.selectbox(
