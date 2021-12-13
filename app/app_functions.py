@@ -504,3 +504,30 @@ def graph_punk_type_bid(indiv):
                 labels={'x': 'Punk Type', 'y': 'USD(K)'})
     fig.update_layout(title = 'Average Bids per Type', title_x=.5)
     return fig
+
+###############ABOUT PROJECT PAGE##############################################################################
+def set_about():
+    st.title('Project Terms and Information')
+
+    st.subheader("Genesis")
+    st.write('The CryptoPunks are undoubtebly one of the most sought after NFTs. Unfortunately, attempting to estimate the value of an individual punk can be confusing,  as only 30% of punks have recent (past 6 months) sale data and many have no transaction data since they were claimed. This project was created to aid potential CryptoPunk buyers in estimating the value of a particular punk based on punks with similar accessories, accessory counts, and types, regardless of whether they have recent sale data or not.')
+    st.markdown('##')
+    
+    st.subheader("Estimated Value")
+    st.write("The estimated value of each punk was estimated using deep neural networks. The model incorporated more than 100 features, such as the accessories list and transaction history of each punk.")
+    st.markdown('##')
+
+    st.subheader("Rarity Score")
+    st.write("The rarity score of a punk explains how rare a punk is and was calculated based on how rare all of the attributes of the particular punk are. The higher the score, the more rare the punk is. The accessories (87 possible accessories), types (alien, ape, zombie, female, male), skin (teal, ape shade, green, human shade), and total accessories (0-8) are all utilized in this calculation.")
+    st.write("The minimum rarity score is 19.95 and the maximum is 10,336.34. Punks with a rarity score lower than 88.47 fall in the lower half of rarity scores, where as punks with a rarity score of 88.47 or higher fall in the upper half of rarity scores.")
+    st.markdown('##')
+
+    st.subheader("Similarity Score")
+    st.write("The similarity score of a punk explains how similar it is to the inputted punk. Similarity scores closer to 1 imply strong similarity to the inputted punk. This similarity scores were calculated using a recommender system supported by natural language processing algorithms and cosine distances.")
+    st.markdown('##')
+
+    st.subheader("The Data Source")
+    st.write("The data for this project was collected using three different sounces: OpenSea API for the accessory and type counts, LarvaLabs for all the transaction data, and Kaggle for a list of each individual punk's accessories and type. Below are links to the location of the data.")
+    st.markdown("""<a href="https://docs.opensea.io/reference/retrieving-a-single-collection"> OpenSea API </a>""", unsafe_allow_html=True)
+    st.markdown("""<a href="https://www.larvalabs.com/cryptopunks"> Larva Labs </a>""", unsafe_allow_html=True)
+    st.markdown("""<a href="https://www.kaggle.com/tunguz/cryptopunks-simple-visualization/data"> Kaggle Dataset </a>""", unsafe_allow_html=True)
