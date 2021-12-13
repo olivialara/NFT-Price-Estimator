@@ -4,7 +4,7 @@ import pandas as pd
 #import nltk
 from app_functions import *
 
-st.sidebar.image('../cryptopunks-image.jpg')
+#st.sidebar.image('../cryptopunks-image.jpg')
 st.sidebar.header('What do you want?')
 
 menu = st.sidebar.selectbox(
