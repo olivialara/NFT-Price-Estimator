@@ -81,18 +81,15 @@ def set_home():
         st.markdown(f"Similarity Score:  {similar_punks[9][1]}")
         st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(similar_punks[9][0]) + '.png', use_column_width=True)
 
-    st.write(graph_all_punk_transactions(trans, id))
-    
-    my_expander = st.expander(label='View Sales Only Graph')
-    with my_expander:
-        st.write(graph_sales_punk_transactions(trans, id))
-            
-    my_expander_2 = st.expander(label='View Bids Only Graph')
-    with my_expander_2:
-        st.write(graph_bids_punk_transactions(trans, id))
+    menu_set_chart = st.radio("", ("All Transactions", "Sales Only", "Bids Only", "Offers Only"),)
 
-    my_expander_3 = st.expander(label = 'View Offers Only Graph')
-    with my_expander_3:
+    if menu_set_chart == "All Transactions":
+        st.write(graph_all_punk_transactions(trans, id))
+    elif menu_set_chart  == "Sales Only":
+        st.write(graph_sales_punk_transactions(trans, id))
+    elif menu_set_chart  == "Bids Only":
+        st.write(graph_bids_punk_transactions(trans, id))
+    elif menu_set_chart == "Offers Only":
         st.write(graph_offers_punk_transactions(trans, id))
 
 def get_estimated_value(estimates, id):
