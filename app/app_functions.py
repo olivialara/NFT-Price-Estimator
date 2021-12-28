@@ -438,32 +438,6 @@ def graph_punk_type_rarity(types):
     fig.update_layout(title = 'Type Counts', title_x=.5)
     return fig
 
-def graph_punk_type_sale(indiv):
-    # bar plot of average sales (in last 6 months) per punk type
-    type_names = ['alien', 'ape', 'zombie', 'female', 'male']
-
-    fig = px.bar(indiv, 
-                x= type_names,
-                y= [0, 4605.00, 2315.91, 478.06, 226.48],
-                text = [0, 4605, 2315.91, 478.06, 226.48],
-                color_discrete_sequence = ['#99c2ff'],
-                labels={'x': 'Punk Type', 'y': 'USD(K)'})
-    fig.update_layout(title = 'Average Sale Price per Type', title_x=.5)
-    return fig
-
-def graph_punk_type_bid(indiv):
-    # bar plot of average bids (in last 6 months) per punk type
-    type_names = ['alien', 'ape', 'zombie', 'female', 'male']
-    
-    fig = px.bar(indiv, 
-                x= type_names,
-                y= [12421.31, 808.40, 681.77, 174.60, 220.03],
-                text = [12421.31, 808.40, 681.77, 174.60, 220.03],
-                color_discrete_sequence = ['#bfacff'],
-                labels={'x': 'Punk Type', 'y': 'USD(K)'})
-    fig.update_layout(title = 'Average Bid per Type', title_x=.5)
-    return fig
-
 def graph_punk_accessory_rarity(accessory):
     # sort values by amount
     acc_sorted = accessory.sort_values(by = 'amount')
@@ -509,6 +483,32 @@ def graph_punk_accessory_bids(indiv):
              color_discrete_sequence = ['#bfacff'],
              labels={'x': 'Punk Type', 'y': 'USD(K)'})
     fig.update_layout(title = 'Average Bid for Punks w/ Rarest Accessories, title_x=.5)
+    return fig
+
+def graph_punk_type_sale(indiv):
+    # bar plot of average sales (in last 6 months) per punk type
+    type_names = ['alien', 'ape', 'zombie', 'female', 'male']
+
+    fig = px.bar(indiv, 
+                x= type_names,
+                y= [0, 4605.00, 2315.91, 478.06, 226.48],
+                text = [0, 4605, 2315.91, 478.06, 226.48],
+                color_discrete_sequence = ['#99c2ff'],
+                labels={'x': 'Punk Type', 'y': 'USD(K)'})
+    fig.update_layout(title = 'Average Sale Price per Type', title_x=.5)
+    return fig
+
+def graph_punk_type_bid(indiv):
+    # bar plot of average bids (in last 6 months) per punk type
+    type_names = ['alien', 'ape', 'zombie', 'female', 'male']
+    
+    fig = px.bar(indiv, 
+                x= type_names,
+                y= [12421.31, 808.40, 681.77, 174.60, 220.03],
+                text = [12421.31, 808.40, 681.77, 174.60, 220.03],
+                color_discrete_sequence = ['#bfacff'],
+                labels={'x': 'Punk Type', 'y': 'USD(K)'})
+    fig.update_layout(title = 'Average Bid per Type', title_x=.5)
     return fig
 
 ###############ABOUT PROJECT PAGE##############################################################################
