@@ -561,3 +561,10 @@ def set_about():
     st.markdown("""<a href="https://docs.opensea.io/reference/retrieving-a-single-collection"> OpenSea API </a>""", unsafe_allow_html=True)
     st.markdown("""<a href="https://www.larvalabs.com/cryptopunks"> Larva Labs </a>""", unsafe_allow_html=True)
     st.markdown("""<a href="https://www.kaggle.com/tunguz/cryptopunks-simple-visualization/data"> Kaggle Dataset </a>""", unsafe_allow_html=True)
+    
+    st.subheader("Creator Information")
+    st.write("The website and code for this project was created by Olivia Lara in November of 2021.")
+    st.write("Email: oliviamarielara@gmail.com")
+    st.write("GitHub: https://github.com/olivialara")
+    st.write("LinkedIn: https://www.linkedin.com/in/oliviamlara")
+    st.write("Portfolio: https://oliviamlara.com")
