@@ -5,12 +5,14 @@ import numpy as np
 import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
+import plotly.io as pio
 import json
 
 
 ###############HOME PAGE##############################################################################
 
 def set_home():
+    
     st.title('Search By Punk ID')
     # st.header("Search By Punk ID")
     st.subheader("Get the estimated value, rarity score, similar punks, and transaction data.")
@@ -104,6 +106,7 @@ def get_similar_punks(nearest_neighbors, id):
     return(json.loads(nearest_neighbors['neighbors'].iloc[id]))
 
 def graph_all_punk_transactions(trans, id):
+    pio.templates.default = "plotly_dark"
     trans.rename(columns = {'punk_id': 'id'}, inplace = True)
     # dataframe for single punk
     punk = trans[trans['id'] == id]
@@ -144,6 +147,7 @@ def graph_all_punk_transactions(trans, id):
     return fig
 
 def graph_sales_punk_transactions(trans, id):
+    pio.templates.default = "plotly_dark"
     # first plot: sales
     trans.rename(columns = {'punk_id': 'id'}, inplace = True)
     # dataframe for single punk
@@ -178,6 +182,7 @@ def graph_sales_punk_transactions(trans, id):
     return fig_1
 
 def graph_bids_punk_transactions(trans, id):
+    pio.templates.default = "plotly_dark"
     trans.rename(columns = {'punk_id': 'id'}, inplace = True)
     # dataframe for single punk
     punk = trans[trans['id'] == id]
@@ -213,6 +218,7 @@ def graph_bids_punk_transactions(trans, id):
     return fig_2
     
 def graph_offers_punk_transactions(trans, id):
+    pio.templates.default = "plotly_dark"
     trans.rename(columns = {'punk_id': 'id'}, inplace = True)
     # dataframe for single punk
     punk = trans[trans['id'] == id]
