@@ -459,7 +459,7 @@ def graph_punk_accessory_rarity(accessory):
              text = acc_amount,
              color_discrete_sequence = ['#9DEA2E'],
              labels={'x': 'Punk Accessory', 'y': 'Amount'})
-    fig.update_layout(title = "Rare Accessories' Counts", title_x=.5)
+    fig.update_layout(title = "Rare Accessory Counts", title_x=.5)
     return fig
 
 def graph_punk_accessory_sales(indiv):
@@ -470,7 +470,7 @@ def graph_punk_accessory_sales(indiv):
              text = [675.83, 286.70, 579.64, 377.84, 324.99],
              color_discrete_sequence = ['#99c2ff'],
              labels={'x': 'Punk Type', 'y': 'USD(K)'})
-    fig.update_layout(title = 'Average Sales for Punks w/ Rare Punk Accessories', title_x=.5)
+    fig.update_layout(title = 'Average Sale Price for Punks w/ Rare Accessories, title_x=.5)
     return fig
 
 def graph_punk_accessory_bids(indiv):
@@ -481,7 +481,7 @@ def graph_punk_accessory_bids(indiv):
              text = [668.65, 306.05, 468.97, 190.01, 332.17],
              color_discrete_sequence = ['#bfacff'],
              labels={'x': 'Punk Type', 'y': 'USD(K)'})
-    fig.update_layout(title = 'Average Bids for Punks w/ Rare Punk Accessories', title_x=.5)
+    fig.update_layout(title = 'Average Bid for Punks w/ Rare Accessories, title_x=.5)
     return fig
 
 def graph_punk_type_sale(indiv):
@@ -494,7 +494,7 @@ def graph_punk_type_sale(indiv):
                 text = [0, 4605, 2315.91, 478.06, 226.48],
                 color_discrete_sequence = ['#99c2ff'],
                 labels={'x': 'Punk Type', 'y': 'USD(K)'})
-    fig.update_layout(title = 'Average Sales per Type', title_x=.5)
+    fig.update_layout(title = 'Average Sale Price per Type', title_x=.5)
     return fig
 
 def graph_punk_type_bid(indiv):
@@ -507,7 +507,7 @@ def graph_punk_type_bid(indiv):
                 text = [12421.31, 808.40, 681.77, 174.60, 220.03],
                 color_discrete_sequence = ['#bfacff'],
                 labels={'x': 'Punk Type', 'y': 'USD(K)'})
-    fig.update_layout(title = 'Average Bids per Type', title_x=.5)
+    fig.update_layout(title = 'Average Bid per Type', title_x=.5)
     return fig
 
 
