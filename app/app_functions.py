@@ -459,7 +459,7 @@ def graph_punk_accessory_rarity(accessory):
              text = acc_amount,
              color_discrete_sequence = ['#9DEA2E'],
              labels={'x': 'Punk Accessory', 'y': 'Amount'})
-    fig.update_layout(title = "Rare Accessories' Counts", title_x=.5)
+    fig.update_layout(title = "Rare Accessory Counts", title_x=.5)
     return fig
 
 def graph_punk_accessory_sales(indiv):
