@@ -32,8 +32,8 @@ def set_home():
     with col3:
         st.write("")
    
-    st.write(f"Estimated Value of Punk: ${get_estimated_value(estimates, id)}")
-    st.write(f"Rarity Score of Punk: {get_rarity_score(rarity, id)}K")
+    st.write(f"Estimated Value of Punk: ${get_estimated_value(estimates, id)}K")
+    st.write(f"Rarity Score of Punk: {get_rarity_score(rarity, id)}")
 
     st.write(f"10 Most Similar Punks: ")
     
