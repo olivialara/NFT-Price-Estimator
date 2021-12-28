@@ -507,7 +507,7 @@ def graph_punk_type_bid(indiv):
                 text = [12421.31, 808.40, 681.77, 174.60, 220.03],
                 color_discrete_sequence = ['#bfacff'],
                 labels={'x': 'Punk Type', 'y': 'USD(K)'})
-    fig.update_layout(title = 'Average Bids per Type', title_x=.5)
+    fig.update_layout(title = 'Average Bid per Type', title_x=.5)
     return fig
 
 
