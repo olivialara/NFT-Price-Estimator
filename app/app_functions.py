@@ -16,10 +16,10 @@ def set_home():
     # st.header("Search By Punk ID")
     st.subheader("Get the estimated value, rarity score, similar punks, and transaction data.")
 
-    trans = pd.read_csv('../data/clean_transactions.csv')
-    rarity = pd.read_csv('../data/clean_rarity.csv')
-    nearest_neighbors = pd.read_csv('../data/clean_nearest_neighbors.csv')
-    estimates = pd.read_csv('../data/nn_preds.csv')
+    trans = pd.read_csv('data/clean_transactions.csv')
+    rarity = pd.read_csv('data/clean_rarity.csv')
+    nearest_neighbors = pd.read_csv('data/clean_nearest_neighbors.csv')
+    estimates = pd.read_csv('data/nn_preds.csv')
 
     id = st.number_input('CryptoPunk ID', 0, 9999)
     col1, col2, col3 = st.columns(3)
@@ -267,7 +267,7 @@ def graph_offers_punk_transactions(trans, id):
 def set_value():
     st.title('Top Ten Highest Estimated Values')
     
-    estimates = pd.read_csv('../data/nn_preds.csv')
+    estimates = pd.read_csv('data/nn_preds.csv')
     
     col1, col2, col3, col4, col5 = st.columns(5)
     
@@ -342,7 +342,7 @@ def set_rarity():
     st.title('Top Ten Rarest Punks')
     #st.subheader(f" The 10 most rariest punks are: ")
 
-    rarity = pd.read_csv('../data/clean_rarity.csv')
+    rarity = pd.read_csv('data/clean_rarity.csv')
     
     col1, col2, col3, col4, col5 = st.columns(5)
     
@@ -415,9 +415,9 @@ def get_rare_punks(rarity):
 
 def set_averages():
     st.title('Averages of Punks Based on Types and Accessories')
-    types = pd.read_csv('../data/type.csv')
-    accessory = pd.read_csv('../data/clean_accessory.csv')
-    indiv = pd.read_csv('../data/clean_individual.csv')
+    types = pd.read_csv('data/type.csv')
+    accessory = pd.read_csv('data/clean_accessory.csv')
+    indiv = pd.read_csv('data/clean_individual.csv')
     
     menu_set_averages = st.radio("", ("Types", "Accessories"),)
 
