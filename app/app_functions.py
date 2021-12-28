@@ -494,7 +494,7 @@ def graph_punk_type_sale(indiv):
                 text = [0, 4605, 2315.91, 478.06, 226.48],
                 color_discrete_sequence = ['#99c2ff'],
                 labels={'x': 'Punk Type', 'y': 'USD(K)'})
-    fig.update_layout(title = 'Average Sales per Type', title_x=.5)
+    fig.update_layout(title = 'Average Sale Price per Type', title_x=.5)
     return fig
 
 def graph_punk_type_bid(indiv):
