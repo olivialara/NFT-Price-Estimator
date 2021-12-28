@@ -413,13 +413,13 @@ def set_averages():
 
     if menu_set_averages == "Types":
         #st.markdown('### Graphs')
-        #st.markdown('.')
+        st.markdown('.')
         #st.write(graph_punk_type_rarity(types))
         #st.write(graph_punk_type_sale(indiv))
         #st.write(graph_punk_type_bid(indiv))
     elif menu_set_averages  == "Accessories":
         #st.markdown('### Graphs')
-        #st.markdown('.')
+        st.markdown('.')
         #st.write(graph_punk_accessory_rarity(accessory))
         #st.write(graph_punk_accessory_sales(indiv))
         #st.write(graph_punk_accessory_bids(indiv))
