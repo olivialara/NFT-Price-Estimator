@@ -16,7 +16,7 @@ with st.sidebar:
     )
 
     st.sidebar.markdown('---')
-    st.sidebar.write('Olivia Lara | December 2021 oliviamarielara@gmail.com https://github.com/olivialara')
+    st.sidebar.write('Last Updated: November 25, 2021')
 
 if menu == 'Search by Punk ID':
     set_home()
