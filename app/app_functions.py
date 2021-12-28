@@ -463,7 +463,7 @@ def graph_punk_accessory_rarity(accessory):
     fig.update_layout(title = "Rarest Accessory Counts", title_x=.5)
     return fig
 
-def graph_punk_accessory_sales(indiv):
+def graph_punk_accessory_sale(indiv):
     rare_acc_names = ['beanie', 'choker', 'pilot', 'tiara', 'orange side']
     fig = px.bar(indiv, 
              x= rare_acc_names,
