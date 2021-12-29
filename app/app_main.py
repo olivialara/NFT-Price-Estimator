@@ -16,7 +16,8 @@ with st.sidebar:
     )
 
     st.sidebar.markdown('---')
-    st.sidebar.write('Last Updated: November 25, 2021')
+    st.sidebar.write('Website Last Updated: December 28, 2021')
+    st.sidebar.write('Transaction Data Last Updated: November 25, 2021')
 
 if menu == 'Search by Punk ID':
     set_home()
