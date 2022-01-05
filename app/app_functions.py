@@ -107,7 +107,7 @@ def set_home():
         st.write(graph_offers_punk_transactions(trans, id))
 
 def get_estimated_value(estimates, id):
-    return(estimates['rounded_preds'].iloc[id])
+    return(estimates['formatted'].iloc[id])
 
 def get_rarity_score(rarity, id):
     return round(rarity['total_rarity_score'].iloc[id], 2)
@@ -333,7 +333,7 @@ def set_value():
 def get_high_punks(estimates):
     ten_high = estimates.sort_values(by = 'nn_preds', ascending=False).head(10)
     ten_high_ids = list(ten_high['punk_id'])
-    ten_high_preds = list(ten_high['rounded_preds'])
+    ten_high_preds = list(ten_high['formatted'])
     return (list(zip(ten_high_ids, ten_high_preds)))
 
 ###############HIGHEST RARITY SCORES PAGE##############################################################################
