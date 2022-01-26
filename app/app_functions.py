@@ -404,10 +404,10 @@ def set_rarity():
         st.markdown(f"Rarity Score: {rare_punks[9][1]}")
         st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(rare_punks[9][0]) + '.png')
         #st.write("      ")
-
-df_rarity_score = pd.DataFrame(rarity['total_rarity_score'].describe())
-df_rarity_score = df_rarity_score.rename(columns = {"total_rarity_score":"total rarity score"}).iloc[1:, :]
-st.table(df_rarity_score)
+        
+    df_rarity_score = pd.DataFrame(rarity['total_rarity_score'].describe())
+    df_rarity_score = df_rarity_score.rename(columns = {"total_rarity_score":"total rarity score"}).iloc[1:, :]
+    st.table(df_rarity_score)
 
 def get_rare_punks(rarity):
     ten_rare = rarity.sort_values(by = 'total_rarity_score', ascending=False).head(10)
@@ -460,10 +460,6 @@ def set_averages():
             st.markdown(f"See all accessory info [here]({details_url}).")
         with col3:
             st.write("")
-        
-#         my_expander = st.expander(label='View All Accessory Counts & Rarity')
-#         with my_expander:
-#             st.table(accessory.iloc[11:, 0:3])
 
 
         st.write(graph_punk_accessory_rarity(accessory))
