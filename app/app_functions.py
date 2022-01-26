@@ -444,15 +444,21 @@ def set_averages():
         with col1:
             st.write("")
         with col2:
-            st.table(accessory.iloc[0:11, 0:3])
+            st.table(accessory.iloc[0:11, 0:3]) 
+            
+            agree = st.checkbox('View All Accessory Counts & Rarity')
+            if agree:
+                st.table(accessory.iloc[11:, 0:3])
+            
             details_url = 'https://www.larvalabs.com/cryptopunks/attributes' 
             st.markdown(f"See all accessory info [here]({details_url}).")
         with col3:
             st.write("")
         
-        my_expander = st.expander(label='View All Accessory Counts & Rarity')
-        with my_expander:
-            st.table(accessory.iloc[11:, 0:3])
+#         my_expander = st.expander(label='View All Accessory Counts & Rarity')
+#         with my_expander:
+#             st.table(accessory.iloc[11:, 0:3])
+
 
         st.write(graph_punk_accessory_rarity(accessory))
         st.write(graph_punk_accessory_sales(indiv))
