@@ -409,7 +409,7 @@ def set_rarity():
         st.write("")
     with col2:
         df_rarity_score = pd.DataFrame(rarity['total_rarity_score'].describe())
-        df_rarity_score = df_rarity_score.rename(columns = {"total_rarity_score":"total rarity score"}).iloc[1:, :]
+        df_rarity_score = df_rarity_score.rename(columns = {"total_rarity_score":"rarity score"}).iloc[1:, :]
         st.table(df_rarity_score)
     with col3:
         st.write("")
