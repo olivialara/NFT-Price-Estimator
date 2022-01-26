@@ -505,7 +505,7 @@ def graph_punk_accessory_sales(indiv):
              text = [675.83, 286.70, 579.64, 377.84, 324.99],
              color_discrete_sequence = ['#99c2ff'],
              labels={'x': 'Punk Type', 'y': 'USD(K)'})
-    fig.update_layout(title = 'Average Sale Price for Punks w/ Rare Accessories', title_x=.5)
+    fig.update_layout(title = 'Average Sale for Punks with Rare Accessory', title_x=.5)
     return fig
 
 def graph_punk_accessory_bids(indiv):
@@ -529,7 +529,7 @@ def graph_punk_type_sale(indiv):
                 text = [0, 4605, 2315.91, 478.06, 226.48],
                 color_discrete_sequence = ['#99c2ff'],
                 labels={'x': 'Punk Type', 'y': 'USD(K)'})
-    fig.update_layout(title = 'Average Sale Price per Type', title_x=.5)
+    fig.update_layout(title = 'Average Sale per Type', title_x=.5)
     return fig
 
 def graph_punk_type_bid(indiv):
