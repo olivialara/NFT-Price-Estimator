@@ -405,11 +405,17 @@ def set_rarity():
         st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(rare_punks[9][0]) + '.png')
         #st.write("      ")
 
+df_rarity_score = pd.DataFrame(rarity['total_rarity_score'].describe())
+df_rarity_score = df_rarity_score.rename(columns = {"total_rarity_score":"total rarity score"}).iloc[1:, :]
+st.table(df_rarity_score)
+
 def get_rare_punks(rarity):
     ten_rare = rarity.sort_values(by = 'total_rarity_score', ascending=False).head(10)
     ten_rare_ids = list(ten_rare['punk_id'])
     ten_rare_scores = list(ten_rare['rounded_scores'])
     return (list(zip(ten_rare_ids, ten_rare_scores)))
+
+
 
 ###############AVERAGES OF TYPES AND ACCESSORIES PAGE##############################################################################
 
