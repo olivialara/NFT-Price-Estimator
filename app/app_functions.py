@@ -352,8 +352,7 @@ def set_rarity():
     for i in range(len(rare_punks)):
         url = 'https://www.larvalabs.com/cryptopunks/details/' + str(rare_punks[i][0]) 
         urls.append(url)
-    
-    #col1, col2, col3, col4, col5 = st.columns(5)
+   
     with col1:
         #st.write("      ")
         st.markdown(f"#{0+1}: [Punk {rare_punks[0][0]}] ({urls[0]})")
@@ -404,10 +403,16 @@ def set_rarity():
         st.markdown(f"Rarity Score: {rare_punks[9][1]}")
         st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(rare_punks[9][0]) + '.png')
         #st.write("      ")
-        
-    df_rarity_score = pd.DataFrame(rarity['total_rarity_score'].describe())
-    df_rarity_score = df_rarity_score.rename(columns = {"total_rarity_score":"total rarity score"}).iloc[1:, :]
-    st.table(df_rarity_score)
+    
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.write("")
+    with col2:
+        df_rarity_score = pd.DataFrame(rarity['total_rarity_score'].describe())
+        df_rarity_score = df_rarity_score.rename(columns = {"total_rarity_score":"total rarity score"}).iloc[1:, :]
+        st.table(df_rarity_score)
+    with col3:
+        st.write("")
 
 def get_rare_punks(rarity):
     ten_rare = rarity.sort_values(by = 'total_rarity_score', ascending=False).head(10)
