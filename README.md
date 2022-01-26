@@ -10,7 +10,14 @@ The order I took to complete this project was as follows: gather transaction, ac
 
 To gather data, I used OpenSea's API for the collection's attribute counts (how many punks in the collection had certain accessories or types), a Kaggle dataset to get a description of each unique punk's accessories and type, and lastly LarvaLabs to get the transaction history (bids, sales, transfers, claim, bid withdrawn bids, and withdrawn offers). I then needed to combine all the information into one applicable dataframe of 10,000 rows for the model to use, which included creating new columns. The most important column created was "most recent sale in USD" because this is what the model would attempt to predict. 
 
-After gathering and cleaning the data, I performed thorough exploratory data analysis on the dataset. Specifically, focusing on the relationship betweeen the punks recent transactions and its accessory list/count and type. Below you can find a graph that demonstrates common accessories among the top 25 highest sold punks: 
+After gathering and cleaning the data, I performed thorough exploratory data analysis on the dataset. Specifically, focusing on the relationship betweeen the punks recent transactions and its accessory list/count and type. 
+
+Here are two graphs that demonstrate the average sale price (in the past 6 months) for each type and of punks that have a rare accessory.
+![Average Sale per Type](images/common-acc-of-top-sold-w-g.png)
+![Average Sale for Punks with Rare Accessory](images/common-acc-of-top-sold-w-g.png)
+As one can see, rare types (aliens, apes, zombies) sell for far more than unrare types (male and female). Similarly, punks that contain rare accessories (beanie, choker, pilot, tiara, orange side) sell for more than the average, which is $326.56K.
+
+Lastly, Below you can find a graph that demonstrates common accessories among the top 25 highest sold punks: 
 ![Common Accessories Among the Highest Sold Punks](images/common-acc-of-top-sold-w-g.png)
 
 Next, I made several models to best estimate the price of each punk. Specifically, the models I used for regression were as follows: Linear, Ridge, Lasso, ElasticNet, K-Neighbors, Decision Tree, Bagging, Random Forest, Ada Boost, Gradient Boost, and Neural Networks. The success of the models were evaluated based on root mean squared errors, a metric used to determine how far away the predicted values are from the actual value. A deep neural networks model was selected as the price estimator as it had the lowest RMSE. 
