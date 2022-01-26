@@ -13,7 +13,7 @@ To gather data, I used OpenSea's API for the collection's attribute counts (how 
 After gathering and cleaning the data, I performed thorough exploratory data analysis on the dataset. Specifically, focusing on the relationship betweeen the punks recent transactions and its accessory list/count and type. 
 
 Here are some graphs that demonstrate the average sale price (in the past 6 months) for each type and of punks that have a rare accessory:
-![Average Sale per Type](images/type-sales-with-graphics.png)
+![Average Sale per Type](images/type-sales-with-graphics-2.png)
 ![Average Sale for Punks with Rare Accessory](images/acc-sales-with-graphics.png)
 As one can see, rare types (aliens, apes, zombies) sell for far more than unrare types (male and female). Similarly, punks that contain rare accessories (beanie, choker, pilot, tiara, orange side) sell for more than the average, which is $326.56K (the dotted white line).
 
