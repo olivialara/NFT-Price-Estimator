@@ -468,8 +468,8 @@ def graph_punk_type_rarity(types):
                 y= type_sorted['amount'],
                 text = type_sorted['amount'],
                 color_discrete_sequence = ['#19d3f3'],
-                labels={'type': 'Punk Type', 'amount': 'Frequency'})
-    fig.update_layout(title = 'Type Counts', title_x=.5)
+                labels={'type': '<b>Punk Type</b>', 'amount': '<b>Frequency</b>'})
+    fig.update_layout(title = '<b>Type Counts</b>', title_x=.5)
     return fig
 
 def graph_punk_accessory_rarity(accessory):
@@ -493,8 +493,8 @@ def graph_punk_accessory_rarity(accessory):
              y= acc_amount,  
              text = acc_amount,
              color_discrete_sequence = ['#9DEA2E'],
-             labels={'x': 'Punk Accessory', 'y': 'Amount'})
-    fig.update_layout(title = "Rare Accessory Counts", title_x=.5)
+             labels={'x': '<b>Punk Accessory</b>', 'y': '<b>Amount</b>'})
+    fig.update_layout(title = "<b>Rare Accessory Counts</b>", title_x=.5)
     return fig
 
 def graph_punk_accessory_sales(indiv):
@@ -504,8 +504,8 @@ def graph_punk_accessory_sales(indiv):
              y= [675.83, 286.70, 579.64, 377.84, 324.99],
              text = [675.83, 286.70, 579.64, 377.84, 324.99],
              color_discrete_sequence = ['#99c2ff'],
-             labels={'x': 'Punk Type', 'y': 'USD(K)'})
-    fig.update_layout(title = 'Average Sale Price for Punks w/ Rare Accessories', title_x=.5)
+             labels={'x': '<b>Punk Type</b>', 'y': '<b>USD(K)</b>'})
+    fig.update_layout(title = '<b>Average Sale Price for Punks w/ Rare Accessories</b>', title_x=.5)
     return fig
 
 def graph_punk_accessory_bids(indiv):
@@ -515,8 +515,8 @@ def graph_punk_accessory_bids(indiv):
              y= [668.65, 306.05, 468.97, 190.01, 332.17],
              text = [668.65, 306.05, 468.97, 190.01, 332.17],
              color_discrete_sequence = ['#bfacff'],
-             labels={'x': 'Punk Type', 'y': 'USD(K)'})
-    fig.update_layout(title = 'Average Bid for Punks w/ Rare Accessories', title_x=.5)
+             labels={'x': '<b>Punk Type</b>', 'y': '<b>USD(K)</b>'})
+    fig.update_layout(title = '<b>Average Bid for Punks w/ Rare Accessories</b>', title_x=.5)
     return fig
 
 def graph_punk_type_sale(indiv):
@@ -528,8 +528,8 @@ def graph_punk_type_sale(indiv):
                 y= [0, 4605.00, 2315.91, 478.06, 226.48],
                 text = [0, 4605, 2315.91, 478.06, 226.48],
                 color_discrete_sequence = ['#99c2ff'],
-                labels={'x': 'Punk Type', 'y': 'USD(K)'})
-    fig.update_layout(title = 'Average Sale Price per Type', title_x=.5)
+                labels={'x': '<b>Punk Type</b>', 'y': '<b>USD(K)</b>'})
+    fig.update_layout(title = '<b>Average Sale Price per Type</b>', title_x=.5)
     return fig
 
 def graph_punk_type_bid(indiv):
@@ -541,8 +541,8 @@ def graph_punk_type_bid(indiv):
                 y= [12421.31, 808.40, 681.77, 174.60, 220.03],
                 text = [12421.31, 808.40, 681.77, 174.60, 220.03],
                 color_discrete_sequence = ['#bfacff'],
-                labels={'x': 'Punk Type', 'y': 'USD(K)'})
-    fig.update_layout(title = 'Average Bid per Type', title_x=.5)
+                labels={'x': '<b>Punk Type</b>', 'y': '<b>USD(K)</b>'})
+    fig.update_layout(title = '<b>Average Bid per Type</b>', title_x=.5)
     return fig
 
 
