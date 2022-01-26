@@ -11,7 +11,7 @@ The order I took to complete this project was as follows: gather transaction, ac
 To gather data, I used OpenSea's API for the collection's attribute counts (how many punks in the collection had certain accessories or types), a Kaggle dataset to get a description of each unique punk's accessories and type, and lastly LarvaLabs to get the transaction history (bids, sales, transfers, claim, bid withdrawn bids, and withdrawn offers). I then needed to combine all the information into one applicable dataframe of 10,000 rows for the model to use, which included creating new columns. The most important column created was "most recent sale in USD" because this is what the model would attempt to predict. 
 
 After gathering and cleaning the data, I performed thorough exploratory data analysis on the dataset. Specifically, focusing on the relationship betweeen the punks recent transactions and its accessory list/count and type. Below you can find a graph that demonstrates common accessories among the top 25 highest sold punks: 
-![Common Accessories Among the Highest Sold Punks](images/common-accessories-graph.png)
+![Common Accessories Among the Highest Sold Punks](images/common-acc-of-top-sold-w-g.png)
 
 Next, I made several models to best estimate the price of each punk. Specifically, the models I used for regression were as follows: Linear, Ridge, Lasso, ElasticNet, K-Neighbors, Decision Tree, Bagging, Random Forest, Ada Boost, Gradient Boost, and Neural Networks. The success of the models were evaluated based on root mean squared errors, a metric used to determine how far away the predicted values are from the actual value. A deep neural networks model was selected as the price estimator as it had the lowest RMSE. 
 
