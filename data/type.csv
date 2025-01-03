@@ -1,6 +1,6 @@
-type,amount,rarity
-ape,24,0.0024
-female,3840,0.384
-zombie,88,0.0088
-alien,9,0.0009
-male,6039,0.6039
+type,amount,% of punks with type
+ape,24,0.24%
+female,3840,38.4%
+zombie,88,0.88%
+alien,9,0.09%
+male,6039,60.39%
