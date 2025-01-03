@@ -26,7 +26,7 @@ def set_home():
     with col1:
         st.write("")
     with col2:
-        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(id) + '.png', use_column_width=True)
+        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(id) + '.png', use_container_width=True)
         details_url = 'https://www.larvalabs.com/cryptopunks/details/' + str(id)
         st.markdown(f"See all info on this Punk [here]({details_url}).")
     with col3:
@@ -48,38 +48,38 @@ def set_home():
     with col1:
         st.markdown(f"#{0+1}: [Punk {similar_punks[0][0]}] ({urls[0]})")
         st.markdown(f"Similarity Score: {similar_punks[0][1]}")
-        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(similar_punks[0][0]) + '.png', use_column_width=True)
+        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(similar_punks[0][0]) + '.png', use_container_width=True)
         st.markdown(f"#{5+1}: [Punk {similar_punks[5][0]}] ({urls[5]})")
         st.markdown(f"Similarity Score:  {similar_punks[5][1]}")
-        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(similar_punks[5][0]) + '.png', use_column_width=True)
+        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(similar_punks[5][0]) + '.png', use_container_width=True)
     with col2:
         st.markdown(f"#{1+1}: [Punk {similar_punks[1][0]}] ({urls[1]})")
         st.markdown(f"Similarity Score: {similar_punks[1][1]}")
-        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(similar_punks[1][0]) + '.png', use_column_width=True)
+        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(similar_punks[1][0]) + '.png', use_container_width=True)
         st.markdown(f"#{6+1}: [Punk {similar_punks[6][0]}] ({urls[6]})")
         st.markdown(f"Similarity Score: {similar_punks[6][1]}")
-        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(similar_punks[6][0]) + '.png', use_column_width=True)
+        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(similar_punks[6][0]) + '.png', use_container_width=True)
     with col3:
         st.markdown(f"#{2+1}: [Punk {similar_punks[2][0]}] ({urls[2]})")
         st.markdown(f"Similarity Score: {similar_punks[2][1]}")
-        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(similar_punks[2][0]) + '.png', use_column_width=True)
+        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(similar_punks[2][0]) + '.png', use_container_width=True)
         st.markdown(f"#{7+1}: [Punk {similar_punks[7][0]}] ({urls[7]})")
         st.markdown(f"Similarity Score:  {similar_punks[7][1]}")
-        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(similar_punks[7][0]) + '.png', use_column_width=True)
+        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(similar_punks[7][0]) + '.png', use_container_width=True)
     with col4:
         st.markdown(f"#{3+1}: [Punk {similar_punks[3][0]}] ({urls[3]})")
         st.markdown(f"Similarity Score: {similar_punks[3][1]}")
-        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(similar_punks[3][0]) + '.png', use_column_width=True)
+        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(similar_punks[3][0]) + '.png', use_container_width=True)
         st.markdown(f"#{8+1}: [Punk {similar_punks[8][0]}] ({urls[8]})")
         st.markdown(f"Similarity Score: {similar_punks[8][1]}")
-        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(similar_punks[8][0]) + '.png', use_column_width=True)
+        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(similar_punks[8][0]) + '.png', use_container_width=True)
     with col5:
         st.markdown(f"#{4+1}: [Punk {similar_punks[4][0]}] ({urls[4]})")
         st.markdown(f"Similarity Score: {similar_punks[4][1]}")
-        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(similar_punks[4][0]) + '.png', use_column_width=True)
+        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(similar_punks[4][0]) + '.png', use_container_width=True)
         st.markdown(f"#{9+1}: [Punk {similar_punks[9][0]}] ({urls[9]})")
         st.markdown(f"Similarity Score:  {similar_punks[9][1]}")
-        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(similar_punks[9][0]) + '.png', use_column_width=True)
+        st.image('https://www.larvalabs.com/cryptopunks/cryptopunk' + str(similar_punks[9][0]) + '.png', use_container_width=True)
     
     # st.write(graph_all_punk_transactions(trans, id))
     
